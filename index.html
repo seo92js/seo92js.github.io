@@ -3,34 +3,33 @@
     <head>
         <meta charset = "utf-8">
         <meta name ="viewport" content ="width=device-width", initial-scale = "1.0">
+
+        <!-- jquery cdn-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- bootstrap CSS cdn-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
+        <!-- bootstrap thema cdn-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> 
+        <!-- bootstrap js cdn-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <!--style.css-->
+        <link rel ="stylesheet" href = "./static/css/style.css">
+        <!--button.js-->
+        <script src = "./static/js/button.js"></script>
+
         <title>Seo Jeong-Seop</title>
-        <link rel ="stylesheet" href = "style.css">
     </head>
     <body>
         <div class = "Layout">
 
             <div class = "Profile-Name">
-                <img src="Profile.jpeg" width = "15%">
+                <img src="./static/img/Profile.jpeg" width = "15%">
                 <br>
                 Seo Jeong-Seop
             </div>
 
-            <div>
-                <input type="button" value = "Dark Mode" onclick = "
-                    var target = document.querySelector('body');
-
-                    if(this.value === 'Dark Mode'){
-                        target.style.backgroundColor = 'black';
-                        target.style.color = 'white';
-                        this.value = 'Light Mode';
-                    }else{
-                        target.style.backgroundColor = 'white';
-                        target.style.color = 'black';
-                        this.value = 'Dark Mode';
-                    }
-                ">
-            </div>
-
+            <input type= "button" class = "btn btn-warning" value = "Dark Mode" onclick = "darkLightHandler(this)">
+          
             <div class = "Info">
                 <div>Information</div>
                 <div>Male</div>
@@ -40,10 +39,10 @@
             </div>
         
             <div class = "Link">
-                <a href = "mailto:seo92js@gmail.com" id = "Each-Link"><img src = gmail.png width = "5%"></a>
-                <a href = "https://www.instagram.com/seojeongseop/" id = "Each-Link" target = "_blank"><img src = "instagram.png" width = "5%"><a>
-                <a href = "https://github.com/seo92js" id = "Each-Link" target = "_blank"><img src = github.png width= "5%"></a>
-                <a href = "https://seo92js.tistory.com/" id = "Each-Link" target = "_black"><img src = blog.png width = "5%"></a>
+                <a href = "mailto:seo92js@gmail.com" id = "Each-Link"><img src = ./static/img/gmail.png width = "5%"></a>
+                <a href = "https://www.instagram.com/seojeongseop/" id = "Each-Link" target = "_blank"><img src = "./static/img/instagram.png" width = "5%"><a>
+                <a href = "https://github.com/seo92js" id = "Each-Link" target = "_blank"><img src = ./static/img/github.png width= "5%"></a>
+                <a href = "https://seo92js.tistory.com/" id = "Each-Link" target = "_black"><img src = ./static/img/blog.png width = "5%"></a>
             </div>
             
         </div>
