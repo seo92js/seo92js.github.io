@@ -1,50 +1,68 @@
 <!DOCTYPE html>
-<HTML>
+<HTML lang = "ko">
     <head>
         <meta charset = "utf-8">
         <meta name ="viewport" content ="width=device-width", initial-scale = "1.0">
-
         <!-- jquery cdn-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- bootstrap CSS cdn-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
-        <!-- bootstrap thema cdn-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> 
-        <!-- bootstrap js cdn-->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <!--style.css-->
+        <!-- bootstrap -->
+        <link rel ="stylesheet" href = "./static/css/bootstrap.css">
+        <script src = "./static/js/bootstrap.js"></script>
+        <!-- style.css -->
         <link rel ="stylesheet" href = "./static/css/style.css">
-        <!--button.js-->
+        <!-- button.js -->
         <script src = "./static/js/button.js"></script>
-
         <title>Seo Jeong-Seop</title>
     </head>
     <body>
-        <div class = "Layout">
-
-            <div class = "Profile-Name">
-                <img src="./static/img/Profile.jpeg" width = "15%">
-                <br>
-                Seo Jeong-Seop
-            </div>
-
+        <!-- 네비게이터 -->
+        <nav class = "bg-dark">
             <input type= "button" class = "btn btn-warning" value = "Dark Mode" onclick = "darkLightHandler(this)">
-          
-            <div class = "Info">
-                <div>Information</div>
-                <div>Male</div>
-                <div>1992-11</div>
-                <div>Seoul, South Korea</div>
-                <div>Computer Engineering</div>
+        </nav>
+        <!-- 헤더 -->
+        <header class = "bg-dark py-5">
             </div>
-        
-            <div class = "Link">
-                <a href = "mailto:seo92js@gmail.com" id = "Each-Link"><img src = ./static/img/gmail.png width = "5%"></a>
-                <a href = "https://www.instagram.com/seojeongseop/" id = "Each-Link" target = "_blank"><img src = "./static/img/instagram.png" width = "5%"><a>
-                <a href = "https://github.com/seo92js" id = "Each-Link" target = "_blank"><img src = ./static/img/github.png width= "5%"></a>
-                <a href = "https://seo92js.tistory.com/" id = "Each-Link" target = "_black"><img src = ./static/img/blog.png width = "5%"></a>
+            <div class = "row align-items-center text-center">
+                <div class = "col text-white">
+                    <h1>Seo Jeong-Seop</h1>
+                    <div>Male</div>
+                    <div>1992-11</div>
+                    <div>Seoul, South Korea</div>
+                    <div>Computer Engineering</div>
+                </div>
+                <div class = "col">
+                    <img src = "./static/img/Profile.jpeg" width = "30%">
+                </div>
             </div>
-            
+        </header>
+      
+        <div class = "container-fluid py-2 bg-light text-black">
+            <div class = "row align-items-center text-center">
+                <div class = "col">
+                </div>
+                <div class = "col">
+                    <div class = "row">
+                        <div class = "col-6 py-5">
+                            <h2>E-mail</h2>
+                            <a href = "mailto:seo92js@gmail.com"><img src = ./static/img/gmail.png width = "15%"></a>
+                        </div>
+                        <div class = "col-6 py-5">
+                            <h2>Github</h2>
+                            <a href = "https://github.com/seo92js" target = "_blank"><img src = ./static/img/github.png width= "15%"></a>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-6 py-5">
+                            <h2>Instagram</h2>
+                            <a href = "https://www.instagram.com/seojeongseop/" target = "_blank"><img src = "./static/img/instagram.png" width = "15%"></a>
+                        </div>
+                        <div class = "col-6 py-5">
+                            <h2>Blog</h2>
+                            <a href = "https://seo92js.tistory.com/" target = "_black"><img src = ./static/img/blog.png width = "15%"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </HTML>
